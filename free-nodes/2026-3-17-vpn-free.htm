@@ -236,9 +236,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 支持 Hysteria 协议吗？</h5></div>
+    <div class="panel-heading"><h5>Vmess 的安全加密方式推荐使用哪种？</h5></div>
     <div class="panel-body">
-        新版本的 WinXray 已整合了 V2Ray 内核更新，支持 Hysteria 协议。用户可通过导入 Clash 或 sing-box 类型的订阅使用基于 QUIC 的高性能连接，速度和稳定性均更出色。<hr />    </div>
+        目前推荐使用 auto 或 none（结合 TLS 加密）以提升性能。旧版 AEAD 加密已被废弃，使用 TLS/XTLS 层提供的加密即可确保安全。过度加密反而增加 CPU 占用与延迟。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的多策略组如何优化流量分配？</h5></div>
+    <div class="panel-body">
+        多策略组允许将节点按用途、延迟或地理位置分类，并结合规则文件自动分流流量。这样不同应用如游戏、视频和网页流量都能走最优节点，提高整体访问速度和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 的伪装域名为什么重要？</h5></div>
@@ -246,9 +251,19 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         伪装域名必须真实可访问且证书有效，以使流量看起来像普通 HTTPS 请求。正确配置可以降低被封锁和 DPI 检测风险，提高节点安全性和长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的延迟检测如何帮助节点选择？</h5></div>
+    <div class="panel-heading"><h5>VMess 的 gRPC 传输适合移动网络吗？</h5></div>
     <div class="panel-body">
-        Clash 会定期测速节点延迟，并根据策略组自动选择延迟最低节点处理流量。可避免访问高延迟或失效节点，提高网页、视频和游戏访问速度及稳定性。<hr />    </div>
+        gRPC 传输支持长连接和多路复用，减少握手次数，降低延迟。对于移动网络和高延迟环境，它能提供稳定和高速的访问体验，同时降低掉线和延迟波动风险。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 如何选择合适混淆提高稳定性？</h5></div>
+    <div class="panel-body">
+        选择混淆方式时应根据网络环境和封锁程度，例如 tls1.2_ticket_auth 可模拟 HTTPS 流量。合理组合协议和混淆可提升节点稳定性和抗封锁能力，确保长期科学上网体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
+    <div class="panel-body">
+        两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Netch 如何为游戏流量提供加速？</h5></div>
@@ -261,29 +276,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         节点分类可以按地区、延迟或用途分组，结合策略组实现自动分流。这样可以快速选择最佳节点，管理大量节点更加高效，同时提升访问速度和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的多策略组如何优化流量分配？</h5></div>
+    <div class="panel-heading"><h5>Clash 的延迟检测如何帮助节点选择？</h5></div>
     <div class="panel-body">
-        多策略组允许将节点按用途、延迟或地理位置分类，并结合规则文件自动分流流量。这样不同应用如游戏、视频和网页流量都能走最优节点，提高整体访问速度和稳定性。<hr />    </div>
+        Clash 会定期测速节点延迟，并根据策略组自动选择延迟最低节点处理流量。可避免访问高延迟或失效节点，提高网页、视频和游戏访问速度及稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 如何选择合适混淆提高稳定性？</h5></div>
+    <div class="panel-heading"><h5>WinXray 支持 Hysteria 协议吗？</h5></div>
     <div class="panel-body">
-        选择混淆方式时应根据网络环境和封锁程度，例如 tls1.2_ticket_auth 可模拟 HTTPS 流量。合理组合协议和混淆可提升节点稳定性和抗封锁能力，确保长期科学上网体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Vmess 的安全加密方式推荐使用哪种？</h5></div>
-    <div class="panel-body">
-        目前推荐使用 auto 或 none（结合 TLS 加密）以提升性能。旧版 AEAD 加密已被废弃，使用 TLS/XTLS 层提供的加密即可确保安全。过度加密反而增加 CPU 占用与延迟。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 的 gRPC 传输适合移动网络吗？</h5></div>
-    <div class="panel-body">
-        gRPC 传输支持长连接和多路复用，减少握手次数，降低延迟。对于移动网络和高延迟环境，它能提供稳定和高速的访问体验，同时降低掉线和延迟波动风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
-    <div class="panel-body">
-        两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。    </div>
+        新版本的 WinXray 已整合了 V2Ray 内核更新，支持 Hysteria 协议。用户可通过导入 Clash 或 sing-box 类型的订阅使用基于 QUIC 的高性能连接，速度和稳定性均更出色。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -312,16 +312,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-3-17-vpn-free.htm" title="「3月17日」最高速度21.1M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月17日」最高速度21.1M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-13-free-node-subscribe.htm" title="「2月13日」最高速度19.1M/S，2025年Karing免费节点每天更新免费节点订阅链接">「2月13日」最高速度19.1M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-23-free-vpn.htm" title="「1月23日」最高速度21.7M/S，2025年Karing免费节点每天更新免费节点订阅链接">「1月23日」最高速度21.7M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-25-share-vpn.htm" title="「1月25日」最高速度20.5M/S，2025年Karing免费节点每天更新免费节点订阅链接">「1月25日」最高速度20.5M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-21-free-vpn-node.htm" title="「1月21日」最高速度20.3M/S，2025年Karing免费节点每天更新免费节点订阅链接">「1月21日」最高速度20.3M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-29-free-vpn.htm" title="「1月29日」最高速度19.2M/S，2025年Karing免费节点每天更新免费节点订阅链接">「1月29日」最高速度19.2M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-20-top-vpn.htm" title="「2月20日」最高速度18.6M/S，2025年Karing免费节点每天更新免费节点订阅链接">「2月20日」最高速度18.6M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-28-free-vpn.htm" title="「2月28日」最高速度18.5M/S，2025年Karing免费节点每天更新免费节点订阅链接">「2月28日」最高速度18.5M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-3-free-vpn.htm" title="「3月3日」最高速度23M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月3日」最高速度23M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-18-free-node-subscribe.htm" title="「2月18日」最高速度19M/S，2025年Karing免费节点每天更新免费节点订阅链接">「2月18日」最高速度19M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-30-mianfei-vpn.htm" title="「3月30日」最高速度20.3M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月30日」最高速度20.3M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-26-vpn-free.htm" title="「3月26日」最高速度18.7M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月26日」最高速度18.7M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-29-node-share.htm" title="「3月29日」最高速度20.4M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月29日」最高速度20.4M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-19-top-vpn.htm" title="「3月19日」最高速度22.2M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月19日」最高速度22.2M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-7-mianfei-vpn.htm" title="「3月7日」最高速度18.8M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月7日」最高速度18.8M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-25-free-vpn.htm" title="「3月25日」最高速度19.6M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月25日」最高速度19.6M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-28-node-share.htm" title="「3月28日」最高速度22.2M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月28日」最高速度22.2M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-4-mianfei-vpn.htm" title="「3月4日」最高速度18.8M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月4日」最高速度18.8M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-23-free-node-subscribe.htm" title="「3月23日」最高速度18.6M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月23日」最高速度18.6M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-18-free-node-subscribe.htm" title="「3月18日」最高速度21.9M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月18日」最高速度21.9M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
                     </ul>
     </div>
 </div>
@@ -333,13 +333,10 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">24</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
+                <h4><span class="badge" style="float: right;">1</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2026-02/" title="2026-02 归档">2026-02</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">18</span> <a href="/date/2026-01/" title="2026-01 归档">2026-01</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
             </li>
                     </ul>
     </div>
