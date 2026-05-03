@@ -401,6 +401,7 @@ opkg install curl wget coreutils
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-4-25-top-vpn.htm">「4月25日」最高速度22.5M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></p>
+        <p>下一个：<a href="/free-nodes/2026-4-27-vpn-github.htm">「4月27日」最高速度20.7M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
@@ -409,14 +410,9 @@ opkg install curl wget coreutils
         支持。Matsuri 内置订阅更新模块，可自动检测链接变化并定期刷新节点。用户还可手动点击更新按钮同步最新配置，保持网络连接的可用性与速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的加密方式推荐使用哪种？</h5></div>
+    <div class="panel-heading"><h5>Matsuri 节点延迟排序可以自动切换吗？</h5></div>
     <div class="panel-body">
-        SSR 支持多种加密方式，如 aes-256-cfb、chacha20、rc4-md5 等。建议优先选择 chacha20 系列算法，在移动设备上性能更佳，同时具有较强的安全性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 如何实现按协议类型分流？</h5></div>
-    <div class="panel-body">
-        QuantumultX 可根据 TCP、UDP 或特定应用协议分流流量，结合策略组选择节点。这样可以为游戏、视频或广告屏蔽等应用提供最佳网络体验，提高访问速度和稳定性。<hr />    </div>
+        Matsuri 会定期测速节点延迟，结合策略组，可自动选择延迟最低的节点处理流量。这样用户无需手动切换节点，就能保持访问速度和稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下表现如何？</h5></div>
@@ -424,19 +420,9 @@ opkg install curl wget coreutils
         XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定移动网络。结合策略组和多出口节点，可提高访问速度和连接稳定性，保证用户体验流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在 Windows 上安装 Clash for Windows？</h5></div>
+    <div class="panel-heading"><h5>QuantumultX 如何实现按协议类型分流？</h5></div>
     <div class="panel-body">
-        在 Windows 上安装 Clash for Windows 十分简单。只需前往官方 GitHub 页面下载最新版安装包，运行安装程序后导入订阅链接或配置文件即可。安装完成后，用户可以通过图形化界面方便地切换节点、编辑规则和控制代理模式。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点延迟排序可以自动切换吗？</h5></div>
-    <div class="panel-body">
-        Matsuri 会定期测速节点延迟，结合策略组，可自动选择延迟最低的节点处理流量。这样用户无需手动切换节点，就能保持访问速度和稳定性，优化网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 的广告屏蔽原理是什么？</h5></div>
-    <div class="panel-body">
-        QuantumultX 使用分流规则与脚本结合的方式实现广告屏蔽。通过重写 HTTP 请求和阻止特定域名，它能有效去除 App 内广告或网页弹窗，提升浏览体验。<hr />    </div>
+        QuantumultX 可根据 TCP、UDP 或特定应用协议分流流量，结合策略组选择节点。这样可以为游戏、视频或广告屏蔽等应用提供最佳网络体验，提高访问速度和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess AEAD 加密在高封锁环境的优势？</h5></div>
@@ -444,9 +430,24 @@ opkg install curl wget coreutils
         AEAD 加密可防止数据篡改和流量特征泄露，降低被检测风险。在高封锁网络中，保证节点可用性和连接稳定性，同时提升数据传输安全性，确保长期安全访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>QuantumultX 的广告屏蔽原理是什么？</h5></div>
+    <div class="panel-body">
+        QuantumultX 使用分流规则与脚本结合的方式实现广告屏蔽。通过重写 HTTP 请求和阻止特定域名，它能有效去除 App 内广告或网页弹窗，提升浏览体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>VLess + Reality 的优势主要体现在哪些方面？</h5></div>
     <div class="panel-body">
         Reality 采用非传统 TLS 流量伪装方式，通过模拟目标网站证书与握手特征来隐藏代理特征，相较于普通 VLess + TLS 更难被识别。它还具备更高的性能与更少的明文特征，适合高安全需求环境。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的加密方式推荐使用哪种？</h5></div>
+    <div class="panel-body">
+        SSR 支持多种加密方式，如 aes-256-cfb、chacha20、rc4-md5 等。建议优先选择 chacha20 系列算法，在移动设备上性能更佳，同时具有较强的安全性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何在 Windows 上安装 Clash for Windows？</h5></div>
+    <div class="panel-body">
+        在 Windows 上安装 Clash for Windows 十分简单。只需前往官方 GitHub 页面下载最新版安装包，运行安装程序后导入订阅链接或配置文件即可。安装完成后，用户可以通过图形化界面方便地切换节点、编辑规则和控制代理模式。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 如何实现智能分流？</h5></div>
@@ -480,16 +481,16 @@ opkg install curl wget coreutils
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-3-13-free-node-subscribe-links.htm" title="「3月13日」最高速度21.9M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月13日」最高速度21.9M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-7-mianfei-vpn.htm" title="「3月7日」最高速度18.8M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月7日」最高速度18.8M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-9-share-vpn.htm" title="「4月9日」最高速度18.2M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月9日」最高速度18.2M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-21-share-vpn.htm" title="「4月21日」最高速度22.6M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月21日」最高速度22.6M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-19-vpn-github.htm" title="「4月19日」最高速度18.9M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月19日」最高速度18.9M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-20-node-share.htm" title="「3月20日」最高速度21.7M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月20日」最高速度21.7M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-26-vpn-free.htm" title="「3月26日」最高速度18.7M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月26日」最高速度18.7M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-12-free-vpn-node.htm" title="「3月12日」最高速度20M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月12日」最高速度20M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-18-free-node-subscribe.htm" title="「3月18日」最高速度21.9M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月18日」最高速度21.9M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-29-node-share.htm" title="「3月29日」最高速度20.4M/S，2025年Karing免费节点每天更新免费节点订阅链接">「3月29日」最高速度20.4M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-26-vpn-free.htm" title="「4月26日」最高速度21.5M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月26日」最高速度21.5M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-14-free-node-subscribe-links.htm" title="「4月14日」最高速度21.1M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月14日」最高速度21.1M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-13-free-node-subscribe.htm" title="「4月13日」最高速度23M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月13日」最高速度23M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-27-vpn-github.htm" title="「4月27日」最高速度20.7M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月27日」最高速度20.7M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-15-vpn-proxy.htm" title="「4月15日」最高速度21.5M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月15日」最高速度21.5M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-2-vpn-node.htm" title="「5月2日」最高速度21.8M/S，2025年Karing免费节点每天更新免费节点订阅链接">「5月2日」最高速度21.8M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-20-top-vpn-node.htm" title="「4月20日」最高速度21.8M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月20日」最高速度21.8M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-10-free-node-subscribe.htm" title="「4月10日」最高速度19.5M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月10日」最高速度19.5M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-12-vpn-github.htm" title="「4月12日」最高速度18.2M/S，2025年Karing免费节点每天更新免费节点订阅链接">「4月12日」最高速度18.2M/S，2025年Karing免费节点每天更新免费节点订阅链接</a></li>
                     </ul>
     </div>
 </div>
@@ -501,10 +502,10 @@ opkg install curl wget coreutils
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">3</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
+                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
