@@ -1,4 +1,4 @@
-# 「8月25日」最高速度20.1M/S，2025年Karing免费节点每天更新免费节点订阅链接  更新时间 2026-08-25 09:49:21
+# 「9月1日」最高速度22.4M/S，2025年Karing免费节点每天更新免费节点订阅链接  更新时间 2026-09-01 10:08:18
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://freekaring.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://freekaring.github.io/uploads/2026/08/0-20260825.yaml
-- https://freekaring.github.io/uploads/2026/08/1-20260825.yaml
-- https://freekaring.github.io/uploads/2026/08/2-20260825.yaml
-- https://freekaring.github.io/uploads/2026/08/3-20260825.yaml
-- https://freekaring.github.io/uploads/2026/08/4-20260825.yaml
+- https://freekaring.github.io/uploads/2026/09/0-20260901.yaml
+- https://freekaring.github.io/uploads/2026/09/1-20260901.yaml
+- https://freekaring.github.io/uploads/2026/09/2-20260901.yaml
+- https://freekaring.github.io/uploads/2026/09/3-20260901.yaml
+- https://freekaring.github.io/uploads/2026/09/4-20260901.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://freekaring.github.io/uploads/2026/08/0-20260825.txt
-- https://freekaring.github.io/uploads/2026/08/1-20260825.txt
-- https://freekaring.github.io/uploads/2026/08/2-20260825.txt
-- https://freekaring.github.io/uploads/2026/08/3-20260825.txt
-- https://freekaring.github.io/uploads/2026/08/4-20260825.txt
+- https://freekaring.github.io/uploads/2026/09/0-20260901.txt
+- https://freekaring.github.io/uploads/2026/09/1-20260901.txt
+- https://freekaring.github.io/uploads/2026/09/2-20260901.txt
+- https://freekaring.github.io/uploads/2026/09/3-20260901.txt
+- https://freekaring.github.io/uploads/2026/09/4-20260901.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://freekaring.github.io/uploads/2026/08/20260825.json
+- https://freekaring.github.io/uploads/2026/09/20260901.json
 
 ## 更多Clash节点订阅 ：
 
